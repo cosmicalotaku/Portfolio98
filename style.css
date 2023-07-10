@@ -429,6 +429,7 @@ main {
     #Main-Content-Header {
         width: 100%;
         height: fit-content;
+        padding: 5px 5px;
     }
 
     #Main-Content-Body {
