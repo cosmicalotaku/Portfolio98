@@ -429,13 +429,15 @@ main {
     #Main-Content-Header {
         width: 100%;
         height: fit-content;
-        padding: 5px 5px;
+        padding: 10px 5px 5px 5px;
     }
 
     #Main-Content-Body {
         width: 100%;
+        height: 100%;
         justify-content: space-between;
-        padding: 5px;
+        align-items: center;
+        padding: 10px 5px;
     }
     
     .Body-Item {
@@ -447,7 +449,7 @@ main {
     }
     
     .Skill-Img {
-        width: 70px;
-        padding: 5px;
+        width: 50px;
+        padding: 0;
     }
 }
