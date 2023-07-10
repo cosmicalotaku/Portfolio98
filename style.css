@@ -7,11 +7,6 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #fefefe;
-
-}
-
 .Title {
     font-size: 16px;
     font-weight: 900;
@@ -28,15 +23,12 @@ body {
 
 /*Header Section*/
 header {
-    /* Border */
-        border-top:3px solid white;
-        border-bottom:3px solid grey;
-        border-left:3px solid white;
-        border-right:3px solid grey;
-
+    border-top:3px solid white;
+    border-bottom:3px solid grey;
+    border-left:3px solid white;
+    border-right:3px solid grey;
     display: flex;
     flex-direction: column;
-
     position: fixed;
     width: 100%;
 }
@@ -281,10 +273,90 @@ main {
 #Main-Content {
     width: 80vw;
     height: 74vh;
+    display: flex;
     border-top: 1px solid grey;
     border-bottom: 1px solid white;
     border-left: 1px solid grey;
     border-right: 1px solid white;
+}
+
+#Main-Content-Header {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    padding: 30px 10px;
+    background: linear-gradient(135deg, #1084d0, #1083d000 30%);
+}
+
+#Main-Content-Header img {
+    width: 50px;
+}
+
+#Main-Content-Header span {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#Main-Content-Header div {
+    display: flex;
+}
+
+#Main-Content-Header div hr {
+    width: 100%;
+}
+
+#Header-Line-1 {
+    border-color: rgb(255, 50, 50);
+}
+
+#Header-Line-2 {
+    border-color: rgb(255, 255, 50);
+}
+
+#Header-Line-3 {
+    border-color: rgb(50, 129, 50);
+}
+
+#Header-Line-4 {
+    border-color: rgb(50, 50, 255);
+}
+
+#Main-Content-Skill-List {
+    list-style: none;
+    margin-top: 20px
+}
+
+#Main-Content-Body {
+    width: 80%;
+    height: fit-content;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Body-Item {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px
+}
+
+.Body-Item:active {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px dotted black;
+}
+
+.Skill-Img {
+    width: 100px;
+    padding: 10px;
 }
 
 #Info-Bar {
@@ -317,7 +389,9 @@ main {
     margin: 5px 5px;
 }
 
+/*For Phone Users*/
 @media only screen and (max-width: 1000px) {
+    /*Header Properties*/
     #Header-Title {
         padding: 5px 5px;
     }
@@ -333,6 +407,7 @@ main {
         border: none;
     }
 
+    /*Summary Section*/
     #Summary-Container{
         width: 80vw;
     }
@@ -344,5 +419,34 @@ main {
     #Summary-Content {
         justify-content: center;
         align-items: center;
+    }
+
+    /*Skills Section*/
+    #Main-Content {
+        flex-direction: column;
+    }
+
+    #Main-Content-Header {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #Main-Content-Body {
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    
+    .Body-Item {
+        margin: 0;
+    }
+
+    .Body-Item span {
+        font-size: 12px;
+    }
+    
+    .Skill-Img {
+        width: 70px;
+        padding: 5px;
     }
 }
