@@ -1,0 +1,348 @@
+/*Global Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fefefe;
+
+}
+
+.Title {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.Para {
+    color: #222;
+}
+
+.Icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/*Header Section*/
+header {
+    /* Border */
+        border-top:3px solid white;
+        border-bottom:3px solid grey;
+        border-left:3px solid white;
+        border-right:3px solid grey;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    width: 100%;
+}
+
+#Header-Title {
+    display: inherit;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: linear-gradient(90deg,navy,#1084d0);
+    color: white;
+}
+
+#Title-Container {
+    display: flex;
+    align-items: center;
+}
+
+#Close-Button:focus {
+    border-top:2px solid grey;
+    border-bottom:2px solid white;
+    border-left:2px solid grey;
+    border-right:2px solid white;
+    background: darkgray;
+}
+
+#Close-Button {
+    background: #cdcdcd;
+    width: 20px;
+    height: 20px;
+    border-top:2px solid white;
+    border-bottom:2px solid grey;
+    border-left:2px solid white;
+    border-right:2px solid grey;
+}
+
+#Close-Button img {
+    width: auto;
+}
+
+#Navigation-Bar {
+    background-color: #cdcdcd;
+    display: flex;
+    justify-content: flex-start;
+    border-top:1px solid grey;
+    border-bottom:1px solid white;
+    border-left:1px solid grey;
+    border-right:1px solid white;
+}
+
+#Navigation-Bar ul {
+    list-style: none;
+    padding: 5px 20px;
+}
+
+#Navigation-Bar ul li {
+    display: inline;
+}
+
+#Navigation-Bar ul li a {
+    text-decoration: none;
+    color: #222;
+    padding: 0 5px
+}
+
+#Navigation-Bar ul li a:hover{
+    display: inline;
+    text-decoration: none;
+    color: #222;
+    padding: 0 3px;
+    background-color: #cdcdcd;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid grey;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid grey;
+}
+
+#Navigation-Bar ul li a:focus {
+    background: darkgray;
+    width: 20px;
+    height: 20px;
+    border-top:2px solid grey;
+    border-bottom:2px solid white;
+    border-left:2px solid grey;
+    border-right:2px solid white;
+}
+
+#Navigation-Bar ul a {
+    text-decoration: none;
+    color: #222;
+    padding: 0 1px;
+}
+
+/*Viewport Settings*/
+main {
+    border-top:3px solid white;
+    border-bottom:3px solid grey;
+    border-left:3px solid white;
+    border-right:3px solid grey;
+}
+
+/*Summary Section*/
+#Summary {
+    height: 100vh;
+    display: block;
+    background-image: url("Assets/Summary-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Background {
+    height: 100vh;
+    background: linear-gradient(#cdcdcd00, #cdcdcd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Summary-Container {
+    width: 40vw;
+    background: #cdcdcd;
+    border-top:3px solid white;
+    border-bottom:3px solid grey;
+    border-left:3px solid white;
+    border-right:3px solid grey;
+}
+
+#Summary-Title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 20px;
+    background: linear-gradient(90deg,navy,#1084d0);
+    color: white;
+}
+
+#Summary-Holder {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+    padding: 10px 10px;
+}
+
+#Actual-Summary {
+    display: flex;
+    align-items: center;
+}
+
+#Summary-Content {
+    display: flex;
+    flex-direction: column;
+}
+
+#Summary-Content p {
+    text-align: justify;
+}
+
+#Button-Holder {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+#Button-Holder a {
+    text-decoration: none;
+    color: #222;
+    padding: 5px 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid white;
+    border-right: 2px solid grey;
+}
+
+#Button-Holder a:focus {
+    text-decoration: none;
+    color: #222;
+    padding: 5px 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
+    background: darkgrey;
+}
+
+/*Skills Section*/
+#Skills-Container {
+    height: 100vh;
+    background: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skills {
+    background: white;
+    border-top:3px solid grey;
+    border-bottom:3px solid white;
+    border-left:3px solid grey;
+    border-right:3px solid white;
+}
+
+#Address-Bar {
+    height: 30px;
+    padding: 0 10px;
+    background: #cdcdcd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+}
+
+#Address-Bar span {
+    margin-right: 10px;
+}
+
+#Address-Bar div {
+    height: 85%;
+    width: 100%;
+
+    background: #fefefe;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+
+    display: flex;
+    align-items: center;
+}
+
+#Address-Bar div img {
+    width: 15px;
+    margin: 5px 5px;
+}
+
+#Main-Content {
+    width: 80vw;
+    height: 74vh;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+}
+
+#Info-Bar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: #cdcdcd;
+    border-top: 1px solid white;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid white;
+    border-right: 1px solid grey;
+}
+
+#Info-Bar div {
+    width: 100%;
+    height: 85%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+}
+
+#Info-Bar-3 {
+    display: flex;
+    align-items: center;
+}
+
+#Info-Bar-3 img {
+    width: 15px;
+    margin: 5px 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #Header-Title {
+        padding: 5px 5px;
+    }
+
+    #Navigation-Bar {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    #Navigation-Bar div {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
+    #Summary-Container{
+        width: 80vw;
+    }
+
+    #Actual-Summary {
+        flex-direction: column;
+    }
+
+    #Summary-Content {
+        justify-content: center;
+        align-items: center;
+    }
+}
