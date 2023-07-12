@@ -136,7 +136,6 @@ header {
 /*Viewport Settings*/
 main {
     border-top:3px solid white;
-    border-bottom:3px solid grey;
     border-left:3px solid white;
     border-right:3px solid grey;
 }
@@ -489,6 +488,86 @@ main {
     height: fit-content;
     margin: 10px 0;
     justify-content: flex-end;
+}
+
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #cdcdcd;
+    border-top:3px solid white;
+    border-bottom:3px solid grey;
+    border-left:3px solid white;
+    border-right:3px solid grey;
+
+    height: fit-content;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+}
+
+.Footer-Icon {
+    width: 20px;
+    align-items: center;
+}
+
+#Footer-Container, #Taskbar, .Taskbar-Item {
+    display: flex;
+    align-items: center;
+}
+
+#Top-Button {
+    display: flex;
+    padding: 2px;
+    margin: 5px;
+    border-top:3px solid white;
+    border-bottom:3px solid grey;
+    border-left:3px solid white;
+    border-right:3px solid grey;
+}
+
+#Top-Button:focus {
+    display: flex;
+    padding: 2px;
+    margin: 5px;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid white;
+    border-left: 3px solid grey;
+    border-right: 3px solid white;
+    background: darkgray;
+}
+
+.Taskbar-Item {
+    margin: 5px;
+    padding: 3px 5px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
+    background: darkgray;
+}
+
+.Taskbar-Item img {
+    margin-right: 5px;
+}
+
+#Date-Time-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 5px;
+
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
+    background: #cdcdcd;
+
+    font-size: 14px;
 }
 
 /*For Phone Users*/
