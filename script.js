@@ -27,6 +27,10 @@ function getTime() {
         currentHour = "0" + currentHour.toString();
     }
 
+    if (currentMinutes < 10) {
+        currentMinutes = "0" + currentMinutes.toString();
+    }
+
     document.getElementById("Time").innerHTML = currentHour + ":" + currentMinutes + " " + currentHours;
 }
 
