@@ -21,6 +21,18 @@
     margin-right: 10px;
 }
 
+.Win98-Button-Disabled {
+    text-decoration: none;
+    color: #222;
+    background: darkgrey;
+    padding: 5px 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
+    cursor: not-allowed;
+}
+
 /*Header Section*/
 header {
     border-top:3px solid white;
@@ -194,7 +206,7 @@ main {
     padding: 5px;
 }
 
-#Button-Holder a {
+.Win98-Button {
     text-decoration: none;
     color: #222;
     padding: 5px 20px;
@@ -204,7 +216,7 @@ main {
     border-right: 2px solid grey;
 }
 
-#Button-Holder a:focus {
+.Win98-Button:focus {
     text-decoration: none;
     color: #222;
     padding: 5px 20px;
@@ -389,8 +401,98 @@ main {
     margin: 5px 5px;
 }
 
+/*Project Section*/
+#Project-Container {
+    height: 100vh;
+    background: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+}
+
+.Project-Item {
+    width: 40%;
+    height: fit-content;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
+}
+
+.Title-Bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 5px 20px;
+    background: linear-gradient(90deg,navy,#1084d0);
+}
+
+.Item-Body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 100%;
+}
+
+.Item-Body-Content {
+    height: fit-content;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+
+    display: flex;
+    align-items: center;
+}
+
+.Item-Body-Content img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.Body-Content-Tags {
+    list-style: none;
+}
+
+.Body-Content-Tags li {
+    display: inline;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.Body-Content-Hr {
+    display: flex;
+}
+
+.Body-Content-Hr hr {
+    width: 100%;
+}
+
+.Body-Content-Discription {
+    padding: 10px;
+}
+
+.Item-Body-Buttons {
+    display: flex;
+    height: fit-content;
+    margin: 10px 0;
+    justify-content: flex-end;
+}
+
 /*For Phone Users*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     /*Header Properties*/
     #Header-Title {
         padding: 5px 5px;
@@ -451,5 +553,26 @@ main {
     .Skill-Img {
         width: 50px;
         padding: 0;
+    }
+
+    /*Projects Section*/
+    #Project-Container {
+        height: max-content;
+    }
+
+    #Projects {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: max-content;
+        margin: 9.5vh 0;
+    }
+
+    .Project-Item {
+        width: 80vw;
+        margin: 10px 0;
+    }
+
+    .Item-Body-Content {
+        flex-direction: column;
     }
 }
