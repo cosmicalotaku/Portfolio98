@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /*Global Styles*/
 * {
     box-sizing: border-box;
@@ -626,6 +628,39 @@ footer {
     font-size: 14px;
 }
 
+/*Bios Screen*/
+.Mono-Text {
+    font-family: 'VT323', monospace;
+    color: #cdcdcd;
+    font-size: 30px;
+}
+
+#Bios-Screen {
+    height: 100vh;
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: black;
+}
+
+#Manufacturer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Version-Info, #Boot-Initials {
+    display: flex;
+    flex-direction: column;
+}
+
+#Energy-Star-Logo {
+    width: 300px;
+}
+
 /*For Phone Users*/
 @media only screen and (max-width: 1500px) {
     /*Header Properties*/
@@ -709,5 +744,24 @@ footer {
 
     .Item-Body-Content {
         flex-direction: column;
+    }
+
+    /*Bios Screen*/
+    .Mono-Text {
+        font-size: 15px;
+    }
+
+    #Energy-Star-Logo {
+        width: 100px;
+    }
+
+    #Bios-Screen {
+        padding: 30px;
+    }
+
+    #Manufacturer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }

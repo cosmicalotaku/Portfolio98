@@ -9,362 +9,395 @@
 
         <link rel="stylesheet" href= "style.css">
 
-        <script src = "script.js"></script>
+        
     </head>
 
     <body>
-        <header>
-            <div id = "Header-Title">
-                <div id = "Title-Container">
-                    <img src = "Assets/Windows-Logo.png" class = "Icon">
-                    <span class = "Title">Priyanshu's Portfolio.html</span>
+        <div id = "Main" hidden>
+            <header>
+                <div id = "Header-Title">
+                    <div id = "Title-Container">
+                        <img src = "Assets/Windows-Logo.png" class = "Icon">
+                        <span class = "Title">Priyanshu's Portfolio.html</span>
+                    </div>
+
+                    <button id = "Close-Button">
+                        <img src = "data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E">
+                    </button>
                 </div>
 
-                <button id = "Close-Button">
-                    <img src = "data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E">
-                </button>
-            </div>
+                <div id = "Navigation-Bar">
+                    <ul>
+                        <li><a href = "#Summary"><u>S</u>ummary</a></li>
+                        <li><a href = "#Skills-Container"><u>S</u>kills</a></li>
+                        <li><a href = "#Projects"><u>P</u>rojects</a></li>
+                        <li><a href = "#Work-Experience"><u>W</u>ork Experience</a></li>
+                        <li><a href = "#"><u>R</u>esume</a></li>
+                    </ul>
+                </div>
+            </header>
 
-            <div id = "Navigation-Bar">
-                <ul>
-                    <li><a href = "#Summary"><u>S</u>ummary</a></li>
-                    <li><a href = "#Skills-Container"><u>S</u>kills</a></li>
-                    <li><a href = "#Projects"><u>P</u>rojects</a></li>
-                    <li><a href = "#Work-Experience"><u>W</u>ork Experience</a></li>
-                    <li><a href = "#"><u>R</u>esume</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <main>
-            <container id = "Summary">
-                <div id = "Background">
-                    <div id = "Summary-Container">
-                        <div id = "Summary-Title">
-                            <img src = "Assets/Windows-MSI.png" class = "Icon">
-                            <span class = "Title">MySummary.msi</span>
-                        </div>
-
-                        <div id = "Summary-Holder">
-                            <div id = "Actual-Summary">
-                                <div>
-                                    <img src = "Assets/Beluga-Cat-Meme-Face.png" width = "200px">
-                                </div>
-                                <div id = "Summary-Content">
-                                    <span class = "Title">Priyanshu</span>
-                                    <span class = "Title">Student | Programmer | Meme-Pro</span><br>
-                                    <p>
-                                        A Passionate Student with a Dynamic Skill Set looking for Employment. Technologically Adept, good knowledge of core computer Science concepts such as Data Structures and Algorithms, Digital Logic, Computational Theory, Python, SQL, Java, C/C++. Knowledge and Prior working experience in an Office/ Administrative Environment.
-                                    </p>
-                                </div>
+            <main>
+                <container id = "Summary">
+                    <div id = "Background">
+                        <div id = "Summary-Container">
+                            <div id = "Summary-Title">
+                                <img src = "Assets/Windows-MSI.png" class = "Icon">
+                                <span class = "Title">MySummary.msi</span>
                             </div>
 
-                            <div id = "Button-Holder">
-                                <a href = "#Skills" class = "Win98-Button">Next</a>
+                            <div id = "Summary-Holder">
+                                <div id = "Actual-Summary">
+                                    <div>
+                                        <img src = "Assets/Beluga-Cat-Meme-Face.png" width = "200px">
+                                    </div>
+                                    <div id = "Summary-Content">
+                                        <span class = "Title">Priyanshu</span>
+                                        <span class = "Title">Student | Programmer | Meme-Pro</span><br>
+                                        <p>
+                                            A Passionate Student with a Dynamic Skill Set looking for Employment. Technologically Adept, good knowledge of core computer Science concepts such as Data Structures and Algorithms, Digital Logic, Computational Theory, Python, SQL, Java, C/C++. Knowledge and Prior working experience in an Office/ Administrative Environment.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id = "Button-Holder">
+                                    <a href = "#Skills" class = "Win98-Button">Next</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </container>
+                </container>
 
-            <div id = "Skills-Container">
-                <div id = "Skills">
-                    <div id = "Address-Bar">
-                        <span>Address</span>
+                <div id = "Skills-Container">
+                    <div id = "Skills">
+                        <div id = "Address-Bar">
+                            <span>Address</span>
 
-                        <div>
-                            <img src = "Assets/My-Computer-98-Address-Bar.png">
-                            <span>Priyanshu/My Skills</span>
-                        </div>
-                    </div>
-
-                    <div id = "Main-Content">
-                        <div id = "Main-Content-Header">
-                            <img src = "Assets/My-Computer-98.png" alt = "My Computer Icon Windows 98">
-                            <span>My Skills</span>
-                            
                             <div>
-                                <hr id = "Header-Line-1">
-                                <hr id = "Header-Line-2">
-                                <hr id = "Header-Line-3">
-                                <hr id = "Header-Line-4">
-                            </div>
-
-                            <ul id = "Main-Content-Skill-List">
-                                <li><b>Operating System:</b> Windows, Linux & Android</li>
-                                <li><b>Programming Languages:</b> C, Java & Python</li>
-                                <li><b>Databases:</b> MS Access, MySQL & MS SQL Server</li>
-                                <li><b>Web-Technologies:</b> HTML, CSS & JavaScript</li>
-                            </ul>
-                        </div>
-
-                        <div id = "Main-Content-Body">
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/C-Programming-Logo.png" alt = "C Logo">
-                                <span>C Programming</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/Java-Programming-Logo.png" alt = "C Logo">
-                                <span>Java Programming</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/Python-Programming-Logo.png" alt = "C Logo">
-                                <span>Python Programming</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/MS-Access-Logo.png" alt = "C Logo">
-                                <span>MS Access</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/MySQL-Logo.png" alt = "C Logo">
-                                <span>MySQL</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/MsSQLServer-Logo.png" alt = "C Logo">
-                                <span>MS SQL Server</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/HTML-Logo.png" alt = "C Logo">
-                                <span>HTML</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/CSS-Logo.png" alt = "C Logo">
-                                <span>CSS</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/JavaScript-Logo.png" alt = "C Logo">
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/Windows-Logo.png" alt = "C Logo">
-                                <span>Windows</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/Linux-Logo.png" alt = "C Logo">
-                                <span>Linux</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/Android-Logo.png" alt = "C Logo">
-                                <span>Android</span>
-                            </div>
-
-                            <div class = "Body-Item">
-                                <img class = "Skill-Img" src = "Assets/AdobePhotoshop-Logo.png" alt = "C Logo">
-                                <span>Photoshop</span>
+                                <img src = "Assets/My-Computer-98-Address-Bar.png">
+                                <span>Priyanshu/My Skills</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div id = "Info-Bar">
-                        <div id = "Info-Bar-1">12 Object(s)</div>
-                        <div id = "Info-Bar-2"></div>
-                        <div id = "Info-Bar-3">
-                            <img src = "Assets/My-Computer-98-Address-Bar.png">
-                            <span>My Skills</span>
+                        <div id = "Main-Content">
+                            <div id = "Main-Content-Header">
+                                <img src = "Assets/My-Computer-98.png" alt = "My Computer Icon Windows 98">
+                                <span>My Skills</span>
+                                
+                                <div>
+                                    <hr id = "Header-Line-1">
+                                    <hr id = "Header-Line-2">
+                                    <hr id = "Header-Line-3">
+                                    <hr id = "Header-Line-4">
+                                </div>
+
+                                <ul id = "Main-Content-Skill-List">
+                                    <li><b>Operating System:</b> Windows, Linux & Android</li>
+                                    <li><b>Programming Languages:</b> C, Java & Python</li>
+                                    <li><b>Databases:</b> MS Access, MySQL & MS SQL Server</li>
+                                    <li><b>Web-Technologies:</b> HTML, CSS & JavaScript</li>
+                                </ul>
+                            </div>
+
+                            <div id = "Main-Content-Body">
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/C-Programming-Logo.png" alt = "C Logo">
+                                    <span>C Programming</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/Java-Programming-Logo.png" alt = "C Logo">
+                                    <span>Java Programming</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/Python-Programming-Logo.png" alt = "C Logo">
+                                    <span>Python Programming</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/MS-Access-Logo.png" alt = "C Logo">
+                                    <span>MS Access</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/MySQL-Logo.png" alt = "C Logo">
+                                    <span>MySQL</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/MsSQLServer-Logo.png" alt = "C Logo">
+                                    <span>MS SQL Server</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/HTML-Logo.png" alt = "C Logo">
+                                    <span>HTML</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/CSS-Logo.png" alt = "C Logo">
+                                    <span>CSS</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/JavaScript-Logo.png" alt = "C Logo">
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/Windows-Logo.png" alt = "C Logo">
+                                    <span>Windows</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/Linux-Logo.png" alt = "C Logo">
+                                    <span>Linux</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/Android-Logo.png" alt = "C Logo">
+                                    <span>Android</span>
+                                </div>
+
+                                <div class = "Body-Item">
+                                    <img class = "Skill-Img" src = "Assets/AdobePhotoshop-Logo.png" alt = "C Logo">
+                                    <span>Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id = "Info-Bar">
+                            <div id = "Info-Bar-1">12 Object(s)</div>
+                            <div id = "Info-Bar-2"></div>
+                            <div id = "Info-Bar-3">
+                                <img src = "Assets/My-Computer-98-Address-Bar.png">
+                                <span>My Skills</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id = "Project-Container">
-                <div id = "Projects">
-                    <div class = "Project-Item">
-                        <div class = "Title-Bar">
-                            <img src = "Assets/Directory-Closed.png" class = "Icon">
-                            <span class = "Title">The-Win98-Project</span>
-                        </div>
+                <div id = "Project-Container">
+                    <div id = "Projects">
+                        <div class = "Project-Item">
+                            <div class = "Title-Bar">
+                                <img src = "Assets/Directory-Closed.png" class = "Icon">
+                                <span class = "Title">The-Win98-Project</span>
+                            </div>
 
-                        <div class = "Item-Body">
-                            <div class = "Item-Body-Content">
-                                <div>
-                                    <img src = "Assets/Windows-Logo.png">
-                                </div>
-
-                                <div>
-                                    <ul class = "Body-Content-Tags">
-                                        <li>FrontEnd</li>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-
-                                    <div class = "Body-Content-Hr">
-                                        <hr id = "Header-Line-1">
-                                        <hr id = "Header-Line-2">
-                                        <hr id = "Header-Line-3">
-                                        <hr id = "Header-Line-4">
+                            <div class = "Item-Body">
+                                <div class = "Item-Body-Content">
+                                    <div>
+                                        <img src = "Assets/Windows-Logo.png">
                                     </div>
 
-                                    <p class = "Body-Content-Discription">
-                                        The Win98 Project (This Website) is a Windows 98 Themed Personal Portfolio. It's a Front-End Project aimed to improve my HTML and CSS Skills. This project is purely based on vanilla HTML, CSS & JS.
-                                    </p>
-                                </div>
-                            </div>
+                                    <div>
+                                        <ul class = "Body-Content-Tags">
+                                            <li>FrontEnd</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
 
-                            <div class = "Item-Body-Buttons">
-                                <a href = "https://github.com/cosmicalotaku/The-Win98-Project" target = "_blank" class = "Win98-Button">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "Project-Item">
-                        <div class = "Title-Bar">
-                            <img src = "Assets/Directory-Closed.png" class = "Icon">
-                            <span class = "Title">Space Shooter Blitz</span>
-                        </div>
-
-                        <div class = "Item-Body">
-                            <div class = "Item-Body-Content">
-                                <div>
-                                    <img src = "Assets/Pygame-Logo.png">
-                                </div>
-
-                                <div>
-                                    <ul class = "Body-Content-Tags">
-                                        <li>Fullstack</li>
-                                        <li>Python</li>
-                                        <li>Pygame</li>
-                                        <li>Turtle & OS Module</li>
-                                    </ul>
-
-                                    <div class = "Body-Content-Hr">
-                                        <hr id = "Header-Line-1">
-                                        <hr id = "Header-Line-2">
-                                        <hr id = "Header-Line-3">
-                                        <hr id = "Header-Line-4">
-                                    </div>
-
-                                    <p class = "Body-Content-Discription">
-                                        Space Shooter Blitz is a simple two player retro arcade type shooting game inspired from Cinematic classic title Star Trek. The main objective was to learn PyGame and Functions in python while keeping the learning process more interactive by creating a fun little project.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class = "Item-Body-Buttons">
-                                <a class = "Win98-Button-Disabled">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "Project-Item">
-                        <div class = "Title-Bar">
-                            <img src = "Assets/Directory-Closed.png" class = "Icon">
-                            <span class = "Title">Space Shooter Blitz</span>
-                        </div>
-
-                        <div class = "Item-Body">
-                            <div class = "Item-Body-Content">
-                                <div>
-                                    <img src = "Assets/Pygame-Logo.png">
-                                </div>
-
-                                <div>
-                                    <ul class = "Body-Content-Tags">
-                                        <li>Fullstack</li>
-                                        <li>Python</li>
-                                        <li>Pygame</li>
-                                        <li>Turtle & OS Module</li>
-                                    </ul>
-
-                                    <div class = "Body-Content-Hr">
-                                        <hr id = "Header-Line-1">
-                                        <hr id = "Header-Line-2">
-                                        <hr id = "Header-Line-3">
-                                        <hr id = "Header-Line-4">
-                                    </div>
-
-                                    <p class = "Body-Content-Discription">
-                                        Space Shooter Blitz is a simple two player retro arcade type shooting game inspired from Cinematic classic title Star Trek. The main objective was to learn PyGame and Functions in python while keeping the learning process more interactive by creating a fun little project.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class = "Item-Body-Buttons">
-                                <a class = "Win98-Button-Disabled">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "Project-Item" id = "Work-Experience">
-                        <div class = "Title-Bar">
-                            <img src = "Assets/Briefcase.png" class = "Icon">
-                            <span class = "Title">Work Experience</span>
-                        </div>
-
-                        <div class = "Item-Body">
-                            <div class = "Item-Body-Content">
-                                <div>
-                                    <img src = "Assets/Outline-Systems.png">
-                                </div>
-
-                                <div>
-                                    <div class = "Title" id = "Work-Item-1">
-                                        <span>Technical Recruiter</span>
-
-                                        <div id = "Work-Details">
-                                            <span>Outline Systems India</span>
-                                            <span>Nov. 2021 - Sep. 2022</span>
+                                        <div class = "Body-Content-Hr">
+                                            <hr id = "Header-Line-1">
+                                            <hr id = "Header-Line-2">
+                                            <hr id = "Header-Line-3">
+                                            <hr id = "Header-Line-4">
                                         </div>
-                                    </div>
 
-                                    <div class = "Body-Content-Hr">
-                                        <hr id = "Header-Line-1">
-                                        <hr id = "Header-Line-2">
-                                        <hr id = "Header-Line-3">
-                                        <hr id = "Header-Line-4">
+                                        <p class = "Body-Content-Discription">
+                                            The Win98 Project (This Website) is a Windows 98 Themed Personal Portfolio. It's a Front-End Project aimed to improve my HTML and CSS Skills. This project is purely based on vanilla HTML, CSS & JS.
+                                        </p>
                                     </div>
+                                </div>
 
-                                    <p class = "Body-Content-Discription">
-                                        Worked as a Technical Recruiter for Outline Systems India. Position was responsible for Sourcing talent via Job Portals and Company's database for various IT and Non-IT positions for various US Federal, State and Commercial Clients. 
-                                    </p>
+                                <div class = "Item-Body-Buttons">
+                                    <a href = "https://github.com/cosmicalotaku/The-Win98-Project" target = "_blank" class = "Win98-Button">View Project</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class = "Item-Body-Buttons">
-                                <a class = "Win98-Button" href = "#">More Details</a>
+                        <div class = "Project-Item">
+                            <div class = "Title-Bar">
+                                <img src = "Assets/Directory-Closed.png" class = "Icon">
+                                <span class = "Title">Space Shooter Blitz</span>
+                            </div>
+
+                            <div class = "Item-Body">
+                                <div class = "Item-Body-Content">
+                                    <div>
+                                        <img src = "Assets/Pygame-Logo.png">
+                                    </div>
+
+                                    <div>
+                                        <ul class = "Body-Content-Tags">
+                                            <li>Fullstack</li>
+                                            <li>Python</li>
+                                            <li>Pygame</li>
+                                            <li>Turtle & OS Module</li>
+                                        </ul>
+
+                                        <div class = "Body-Content-Hr">
+                                            <hr id = "Header-Line-1">
+                                            <hr id = "Header-Line-2">
+                                            <hr id = "Header-Line-3">
+                                            <hr id = "Header-Line-4">
+                                        </div>
+
+                                        <p class = "Body-Content-Discription">
+                                            Space Shooter Blitz is a simple two player retro arcade type shooting game inspired from Cinematic classic title Star Trek. The main objective was to learn PyGame and Functions in python while keeping the learning process more interactive by creating a fun little project.
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class = "Item-Body-Buttons">
+                                    <a class = "Win98-Button-Disabled">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "Project-Item">
+                            <div class = "Title-Bar">
+                                <img src = "Assets/Directory-Closed.png" class = "Icon">
+                                <span class = "Title">Space Shooter Blitz</span>
+                            </div>
+
+                            <div class = "Item-Body">
+                                <div class = "Item-Body-Content">
+                                    <div>
+                                        <img src = "Assets/Pygame-Logo.png">
+                                    </div>
+
+                                    <div>
+                                        <ul class = "Body-Content-Tags">
+                                            <li>Fullstack</li>
+                                            <li>Python</li>
+                                            <li>Pygame</li>
+                                            <li>Turtle & OS Module</li>
+                                        </ul>
+
+                                        <div class = "Body-Content-Hr">
+                                            <hr id = "Header-Line-1">
+                                            <hr id = "Header-Line-2">
+                                            <hr id = "Header-Line-3">
+                                            <hr id = "Header-Line-4">
+                                        </div>
+
+                                        <p class = "Body-Content-Discription">
+                                            Space Shooter Blitz is a simple two player retro arcade type shooting game inspired from Cinematic classic title Star Trek. The main objective was to learn PyGame and Functions in python while keeping the learning process more interactive by creating a fun little project.
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class = "Item-Body-Buttons">
+                                    <a class = "Win98-Button-Disabled">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "Project-Item" id = "Work-Experience">
+                            <div class = "Title-Bar">
+                                <img src = "Assets/Briefcase.png" class = "Icon">
+                                <span class = "Title">Work Experience</span>
+                            </div>
+
+                            <div class = "Item-Body">
+                                <div class = "Item-Body-Content">
+                                    <div>
+                                        <img src = "Assets/Outline-Systems.png">
+                                    </div>
+
+                                    <div>
+                                        <div class = "Title" id = "Work-Item-1">
+                                            <span>Technical Recruiter</span>
+
+                                            <div id = "Work-Details">
+                                                <span>Outline Systems India</span>
+                                                <span>Nov. 2021 - Sep. 2022</span>
+                                            </div>
+                                        </div>
+
+                                        <div class = "Body-Content-Hr">
+                                            <hr id = "Header-Line-1">
+                                            <hr id = "Header-Line-2">
+                                            <hr id = "Header-Line-3">
+                                            <hr id = "Header-Line-4">
+                                        </div>
+
+                                        <p class = "Body-Content-Discription">
+                                            Worked as a Technical Recruiter for Outline Systems India. Position was responsible for Sourcing talent via Job Portals and Company's database for various IT and Non-IT positions for various US Federal, State and Commercial Clients. 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class = "Item-Body-Buttons">
+                                    <a class = "Win98-Button" href = "#">More Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <footer>
-            <div id = "Footer-Container">
-                <a id = "Top-Button" href = "#Summary">
-                    <img class = "Footer-Icon" src = "Assets/Back-To-Top.png">
-                </a>
-
-                <div id = "Taskbar">
-                    <a class = "Taskbar-Item" href = "mailto:itspriyanshu.k@gmail.com" target = "_blank">
-                        <img class = "Footer-Icon" src = "Assets/Email.png">
-                        <span>Email</span>
+            <footer>
+                <div id = "Footer-Container">
+                    <a id = "Top-Button" href = "#Summary">
+                        <img class = "Footer-Icon" src = "Assets/Back-To-Top.png">
                     </a>
 
-                    <a class = "Taskbar-Item" href = "https://www.linkedin.com/in/priyanshukohli/" target = "_blank">
-                        <img class = "Footer-Icon" src = "Assets/Linked-In.png">
-                        <span>LinkedIn</span>
-                    </a>
+                    <div id = "Taskbar">
+                        <a class = "Taskbar-Item" href = "mailto:itspriyanshu.k@gmail.com" target = "_blank">
+                            <img class = "Footer-Icon" src = "Assets/Email.png">
+                            <span>Email</span>
+                        </a>
+
+                        <a class = "Taskbar-Item" href = "https://www.linkedin.com/in/priyanshukohli/" target = "_blank">
+                            <img class = "Footer-Icon" src = "Assets/Linked-In.png">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id = Date-Time-Container>
+                    <span id = "Time"></span>
+                    <span id = "Date"></span>
+                </div>
+            </footer>
+        </div>
+
+        <div id = "Extras">
+            <div id = "Bios-Screen">
+                <div>
+                    <div id = "Manufacturer">
+                        <div id = "Version-Info">
+                            <span class = "Mono-Text" id = "Project-Name" hidden>The Win-98 Project - Portfolio V0.1.12</span>
+                            <span class = "Mono-Text" id = "Copyright" hidden>Copyright (C) 2001-2023, Cosmical Computers Ltd.</span>
+                        </div>
+    
+                        <img src = "Assets/Energy-Star-Logo.png" id = "Energy-Star-Logo" hidden>
+                    </div>
+    
+                    <div id = "Boot-Initials">
+                        <span class = "Mono-Text" id = "Build" hidden>Portfolio Build 1.12.0</span>
+                        <span class = "Mono-Text" id = "Browser" hidden></span>
+                        <span class = "Mono-Text" id = "Memory" hidden>Memory Testing: OK STATUS-AAB8679V07080</span>
+                        <span class = "Mono-Text" id = "Connection" hidden>Connection Established: TRUE GIBBERISH-YUY8797468</span>
+                        <span class = "Mono-Text" id = "Images" hidden>OS Image: LOADED VERSION-WINDOWS98KB12354</span>
+                        <span class = "Mono-Text" id = "OS" hidden>Image Loading: SUCESSFUL CODE-UIYI797IUO</span>
+                        <span class = "Mono-Text" id = "Joke" hidden>Hotel: TRIVAGO</span>
+                    </div>
+                </div>
+
+                <div>
+                    <span class = "Mono-Text" id = "Loading-Profile" hidden>Loading Porfolio...</span>
                 </div>
             </div>
+        </div>
 
-            <div id = Date-Time-Container>
-                <span id = "Time"></span>
-                <span id = "Date"></span>
-            </div>
-        </footer>
+        <script src = "script.js" async></script>
     </body>
 </html>
