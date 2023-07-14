@@ -525,6 +525,15 @@ main {
     justify-content: flex-end;
 }
 
+/*Work Section*/
+#Work-Item-1 {
+    padding: 0 10px
+}
+
+#Work-Details {
+    display: flex;
+    justify-content: space-between;
+}
 
 /*Footer*/
 footer {
@@ -578,10 +587,22 @@ footer {
 .Taskbar-Item {
     margin: 5px;
     padding: 3px 5px;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid white;
-    border-left: 2px solid grey;
-    border-right: 2px solid white;
+
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
+    text-decoration: none;
+    color: #222;
+}
+
+.Taskbar-Item:focus {
+    margin: 5px;
+    padding: 3px 5px;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid white;
+    border-left: 3px solid grey;
+    border-right: 3px solid white;
     background: darkgray;
 }
 
