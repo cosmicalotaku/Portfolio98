@@ -33,6 +33,8 @@ function loadVersionInfo() {
     document.getElementById("Project-Name").hidden = false;
     document.getElementById("Copyright").hidden = false;
     document.getElementById("Loading-Profile").hidden = false;
+    var biosPost = new Audio("Assets/Bios-Beep.wav");
+    biosPost.play();
 }
 
 function logoBuild() {
@@ -59,9 +61,32 @@ function logoJoke() {
     document.getElementById("Joke").hidden = false;
 }
 
+function initialLoad() {
+    document.getElementById("Bios-Screen").style.backgroundColor = "#0000fa";
+    document.getElementById("Bios-Screen").innerHTML = "";
+    var startupSound = new Audio("Assets/Windows-98-startup-sound.wav");
+    startupSound.play();
+}
+
 function finalLoad() {
     document.getElementById("Extras").hidden = true;
     document.getElementById("Main").hidden = false;
+}
+
+function pageLoad() {
+    document.getElementById("Alert").hidden = true;
+
+    setTimeout(logoLoad, 1000);
+    setTimeout(loadVersionInfo, 2000);
+    setTimeout(logoBuild, 3000);
+    setTimeout(getBrowserInfo, 4000);
+    setTimeout(logoMemory, 5000);
+    setTimeout(logoConnection, 6000);
+    setTimeout(logoImages, 7000);
+    setTimeout(logoOS, 8000);
+    setTimeout(logoJoke, 9000);
+    setTimeout(initialLoad, 10000);
+    setTimeout(finalLoad, 12000);
 }
 
 // Footer-Taskbar Date
@@ -96,17 +121,6 @@ function getTime() {
 
     document.getElementById("Time").innerHTML = currentHour + ":" + currentMinutes + " " + currentHours;
 }
-
-setInterval(logoLoad, 1000);
-setInterval(loadVersionInfo, 2000);
-setInterval(logoBuild, 3000);
-setInterval(getBrowserInfo, 5000);
-setInterval(logoMemory, 7000);
-setInterval(logoConnection, 9000);
-setInterval(logoImages, 11000);
-setInterval(logoOS, 13000);
-setInterval(logoJoke, 15000);
-setInterval(finalLoad, 17000);
 
 setInterval(getTime, 1000);
 setInterval(getDate, 1000);
