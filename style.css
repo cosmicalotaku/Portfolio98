@@ -72,10 +72,10 @@
 
 /*Header Section*/
 header {
-    border-top:3px solid white;
-    border-bottom:3px solid grey;
-    border-left:3px solid white;
-    border-right:3px solid grey;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -96,10 +96,10 @@ header {
 }
 
 #Close-Button:focus {
-    border-top:2px solid grey;
-    border-bottom:2px solid white;
-    border-left:2px solid grey;
-    border-right:2px solid white;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
     background: darkgray;
 }
 
@@ -107,10 +107,10 @@ header {
     background: #cdcdcd;
     width: 20px;
     height: 20px;
-    border-top:2px solid white;
-    border-bottom:2px solid grey;
-    border-left:2px solid white;
-    border-right:2px solid grey;
+    border-top: 2px solid white;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid white;
+    border-right: 2px solid grey;
 }
 
 #Close-Button img {
@@ -121,10 +121,10 @@ header {
     background-color: #cdcdcd;
     display: flex;
     justify-content: flex-start;
-    border-top:1px solid grey;
-    border-bottom:1px solid white;
-    border-left:1px solid grey;
-    border-right:1px solid white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
 }
 
 #Navigation-Bar ul {
@@ -158,10 +158,10 @@ header {
     background: darkgray;
     width: 20px;
     height: 20px;
-    border-top:2px solid grey;
-    border-bottom:2px solid white;
-    border-left:2px solid grey;
-    border-right:2px solid white;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid white;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
 }
 
 #Navigation-Bar ul a {
@@ -172,9 +172,9 @@ header {
 
 /*Viewport Settings*/
 main {
-    border-top:3px solid white;
-    border-left:3px solid white;
-    border-right:3px solid grey;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
 }
 
 /*Summary Section*/
@@ -197,10 +197,10 @@ main {
 #Summary-Container {
     width: 40vw;
     background: #cdcdcd;
-    border-top:3px solid white;
-    border-bottom:3px solid grey;
-    border-left:3px solid white;
-    border-right:3px solid grey;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
 }
 
 #Summary-Title {
@@ -274,10 +274,10 @@ main {
 
 #Skills {
     background: white;
-    border-top:3px solid grey;
-    border-bottom:3px solid white;
-    border-left:3px solid grey;
-    border-right:3px solid white;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid white;
+    border-left: 3px solid grey;
+    border-right: 3px solid white;
 }
 
 #Address-Bar {
@@ -544,10 +544,10 @@ footer {
     justify-content: space-between;
 
     background: #cdcdcd;
-    border-top:3px solid white;
-    border-bottom:3px solid grey;
-    border-left:3px solid white;
-    border-right:3px solid grey;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
 
     height: fit-content;
     position: sticky;
@@ -569,10 +569,10 @@ footer {
     display: flex;
     padding: 2px;
     margin: 5px;
-    border-top:3px solid white;
-    border-bottom:3px solid grey;
-    border-left:3px solid white;
-    border-right:3px solid grey;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
 }
 
 #Top-Button:focus {
@@ -689,6 +689,53 @@ footer {
 
 #Energy-Star-Logo {
     width: 300px;
+}
+
+/*Close Window*/
+#Close-Window {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.800);
+
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+#Close-Window-Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Close-Window-Dailogue {
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
+}
+
+#Close-Window-Dailogue-Main {
+    max-width: 80vw;
+    background: #cdcdcd;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+}
+
+#Close-Window-Main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Close-Window-Buttons {
+    margin-top: 10px;
 }
 
 /*For Phone Users*/

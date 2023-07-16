@@ -1,7 +1,7 @@
 // Importing Header Files
 'using strict'
 
-// Bios-Screen
+// Bios-Screen Procedure
 // Detecting Browser
 function getBrowserInfo() {
     var userAgent = navigator.userAgent;
@@ -124,3 +124,27 @@ function getTime() {
 
 setInterval(getTime, 1000);
 setInterval(getDate, 1000);
+
+// Close Window
+function playByeByeSound() {
+    var shutdown = new Audio("Assets/shutdown.wav")
+    shutdown.play();
+}
+
+function closeWindow() {
+    window.close()
+}
+
+function clickedCloseButton() {
+    document.getElementById("Close-Window").hidden = false;
+}
+
+function returnToMain() {
+    document.getElementById("Close-Window").hidden = true;
+}
+
+function startClosingProcedure() {
+    document.getElementById("Close-Window").style.backgroundColor = "#0000fa";
+    setTimeout(playByeByeSound, 2000);
+    setTimeout(closeWindow, 6000);
+}
