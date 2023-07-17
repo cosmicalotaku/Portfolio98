@@ -628,10 +628,6 @@ footer {
     font-size: 14px;
 }
 
-#Close-Window-Buttons {
-    margin-top: 10px;
-}
-
 /*For Phone Users*/
 @media only screen and (max-width: 1500px) {
     /*Header Properties*/
