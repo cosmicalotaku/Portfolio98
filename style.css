@@ -661,8 +661,13 @@ footer {
     }
 
     /*Skills Section*/
+    #Skills {
+        height: fit-content;    
+    }
+
     #Main-Content {
         flex-direction: column;
+        height: fit-content;
     }
 
     #Main-Content-Header {
@@ -673,7 +678,7 @@ footer {
 
     #Main-Content-Body {
         width: 100%;
-        height: 100%;
+        height: fit-content;
         justify-content: space-between;
         align-items: center;
         padding: 10px 5px;
