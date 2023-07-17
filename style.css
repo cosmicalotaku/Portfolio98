@@ -518,6 +518,7 @@ main {
 
 .Body-Content-Discription {
     padding: 10px;
+    text-align: justify;
 }
 
 .Item-Body-Buttons {
