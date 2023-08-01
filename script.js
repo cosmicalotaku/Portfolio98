@@ -33,3 +33,13 @@ function getTime() {
 
 setInterval(getTime, 1000);
 setInterval(getDate, 1000);
+
+function pressedWorkButton() {
+    var isJobHidden = document.getElementById("Work-Details-Section").hidden;
+
+    if (isJobHidden) {
+        document.getElementById("Work-Details-Section").hidden = false;
+    } else {
+        document.getElementById("Work-Details-Section").hidden = true;
+    }
+}

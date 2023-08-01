@@ -250,6 +250,7 @@ main {
     border-bottom: 2px solid grey;
     border-left: 2px solid white;
     border-right: 2px solid grey;
+    cursor: pointer;
 }
 
 .Win98-Button:focus {
@@ -538,6 +539,85 @@ main {
     justify-content: space-between;
 }
 
+/*Work Details*/
+#Work-Details-Section {
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#Work-Details-Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Work-Window-Outer {
+    background-color: #cdcdcd;
+    border-top: 3px solid white;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid white;
+    border-right: 3px solid grey;
+}
+
+#Work-Window-Inner {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+}
+
+#Work-Window-Main {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 50vw;
+
+    border-top: 1px solid grey;
+    border-bottom: 1px solid white;
+    border-left: 1px solid grey;
+    border-right: 1px solid white;
+
+    display: flex;
+    align-items: center;
+}
+
+#Work-Logo {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#Job-Content span {
+    font-weight: 900;
+}
+
+#Job-Details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Job-Description {
+    text-align: justify;
+}
+
+#Job-Roles {
+    padding: 0 0 0 30px;
+}
+
+#Work-Window-Buttons {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /*Footer*/
 footer {
     display: flex;
@@ -717,5 +797,27 @@ footer {
 
     .Item-Body-Content {
         flex-direction: column;
+    }
+
+    .Item-Body-Content img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /*Work Section*/
+    #Work-Window-Main {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #Work-Logo {
+        width: 200px;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #Job-Content {
+        font-size: 12px;
     }
 }
